@@ -2,3 +2,11 @@ LICENSE
 not_tested_main.py
 README.md
 schema.pdf
+Dockerfile.python
+compose.yml
+haproxy
+nginx
+proxy.yaml
+.dockerignore
+.env
+.git
