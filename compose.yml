@@ -1,18 +1,18 @@
 version: "3"
-# The parser will ignore extension fields prefixed with x-
-#x-deploy: &deploy-dev
-#  deploy:
-#    resources:
-#      limits:
-#        cpus: "1"
-#        memory: 512M
-#      reservations:
-#        memory: 256M
-#x-env_file: &env_file
-#  env_file:
-#    - .env
-#x-restart: &restart
-#  restart: always #no, on-failure , always(default), unless-stopped 
+#The parser will ignore extension fields prefixed with x-
+x-deploy: &deploy-dev
+ deploy:
+   resources:
+     limits:
+       cpus: "1"
+       memory: 512M
+     reservations:
+       memory: 256M
+x-env_file: &env_file
+ env_file:
+   - .env
+x-restart: &restart
+ restart: always #no, on-failure , always(default), unless-stopped 
 
 services:
   mysql:
