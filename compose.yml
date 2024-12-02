@@ -33,7 +33,7 @@ services:
 
   web:
     depends_on: ["db"]
-    image: cr.yandex/crphiskd1jp9hnv4n76n/test
+    image: cr.yandex/crphiskd1jp9hnv4n76n/homework
     networks:
       backend:
         ipv4_address: 172.20.0.5
